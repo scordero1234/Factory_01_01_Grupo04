@@ -4,7 +4,7 @@ package ec.fin.factory_01_01_grupo04;
 
 /**
  *
- * @author grupo
+ * @author grupo4
  */
 public class Factory_01_01_Grupo04 {
 
