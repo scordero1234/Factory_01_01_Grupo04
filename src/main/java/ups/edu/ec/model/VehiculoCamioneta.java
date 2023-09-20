@@ -2,34 +2,25 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package ec.fin.factory_01_01_grupo04;
+package ups.edu.ec.model;
 
 /**
  *
- * @author grupo4
+ * @author s.corderoc
  */
-public class VehiculoCamion extends Vehiculo{
- private String transmision;
-    private String carga;
+public class VehiculoCamioneta extends Vehiculo{
+    private String traccion;
     @Override
     public double costoMatricula() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    public String getTransmision() {
-        return transmision;
+    public String getTraccion() {
+        return traccion;
     }
 
-    public void setTransmision(String transmision) {
-        this.transmision = transmision;
-    }
-
-    public String getCarga() {
-        return carga;
-    }
-
-    public void setCarga(String carga) {
-        this.carga = carga;
+    public void setTraccion(String traccion) {
+        this.traccion = traccion;
     }
     
 }

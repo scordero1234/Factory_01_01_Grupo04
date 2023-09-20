@@ -18,17 +18,17 @@ public class VehiculoFactory extends VehiculoAbstractFactory{
     @Override
     public Vehiculo crearVehiculoFactory(String tipoVehiculo) {
          switch (tipoVehiculo) {
-            case "AUTO" -> {
+            case "AUTO":{
                 return new VehiculoAuto();
             }
-            case "CAMION" -> {
+            case "CAMION":{
                 return new VehiculoCamion();
             }
-            case "CAMIONETA" -> {            
+            case "CAMIONETA" :{            
                 return new VehiculoCamioneta();
             }
                 
-            default -> throw new IllegalArgumentException("Parámetro inválido");
+            default : throw new IllegalArgumentException("Parámetro inválido");
         }
     } 
 }
