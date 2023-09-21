@@ -8,7 +8,7 @@ import ups.edu.ec.model.Vehiculo;
 
 /**
  *
- * @author c.idrovo
+ * @author grupo 4
  */
 public abstract class VehiculoAbstractFactory {
 

@@ -11,7 +11,7 @@ import ups.edu.ec.model.Vehiculo;
 
 /**
  *
- * @author Mauricio Ortiz
+ * @author Grupo 4
  */
 public class VehiculoFactory extends VehiculoAbstractFactory{
 

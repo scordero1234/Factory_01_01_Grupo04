@@ -8,7 +8,6 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import ups.edu.ec.controller.VehiculoFactory;
 import ups.edu.ec.model.Vehiculo;
-import ups.edu.ec.model.VehiculoAuto;
 
 /**
  *
