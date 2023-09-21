@@ -8,11 +8,19 @@ package ups.edu.ec.model;
  *
  * @author s.corderoc
  */
-public class VehiculoCamioneta extends Vehiculo{
+public class VehiculoCamioneta extends Vehiculo {
+
     private String traccion;
+
     @Override
     public double costoMatricula() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        if (getPrecio() > 30000) {
+            return 1500;
+        }
+        if (getAnioFabricacion() >= 2023 && getCilindraje() > 800) {
+            return 400;
+        }
+        return 180;
     }
 
     public String getTraccion() {
@@ -22,5 +30,5 @@ public class VehiculoCamioneta extends Vehiculo{
     public void setTraccion(String traccion) {
         this.traccion = traccion;
     }
-    
+
 }

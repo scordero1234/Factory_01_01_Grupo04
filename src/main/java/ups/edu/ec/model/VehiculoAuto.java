@@ -8,11 +8,19 @@ package ups.edu.ec.model;
  *
  * @author grupo4
  */
-public class VehiculoAuto extends Vehiculo{
- private String version;
+public class VehiculoAuto extends Vehiculo {
+
+    private String version;
+
     @Override
     public double costoMatricula() {
-return 800;
+        if (getPrecio() > 25000) {
+            return 1500;
+        }
+        if (getAnioFabricacion() >= 2023 && getCilindraje() > 1000) {
+            return 1200;
+        }
+        return 500;
     }
 
     public String getVersion() {
@@ -22,5 +30,5 @@ return 800;
     public void setVersion(String version) {
         this.version = version;
     }
-    
+
 }

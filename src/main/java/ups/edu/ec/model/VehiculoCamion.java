@@ -8,12 +8,21 @@ package ups.edu.ec.model;
  *
  * @author grupo4
  */
-public class VehiculoCamion extends Vehiculo{
- private String transmision;
+public class VehiculoCamion extends Vehiculo {
+
+    private String transmision;
     private String carga;
+
     @Override
     public double costoMatricula() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        if (getPrecio() > 60000) {
+            return 2500;
+        }
+        if (getAnioFabricacion() >= 2023) {
+            return 800;
+        }
+        return 400;
+
     }
 
     public String getTransmision() {
@@ -31,5 +40,5 @@ public class VehiculoCamion extends Vehiculo{
     public void setCarga(String carga) {
         this.carga = carga;
     }
-    
+
 }
